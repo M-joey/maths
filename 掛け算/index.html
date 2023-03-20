@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掛け算</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<body>
+    <div class="hero" id="hero">
+        <div class="container">
+            <h1>かけざん</h1>
+            <h2>3から9のだん</h2>
+            <img src="./img/kokuban.png" alt="">  
+            <form name="answer">
+                <input type="text" id="left" size="10" value="" disabled>
+                X
+                <input type="text" id="right" size="10" value="" disabled>
+                =
+                <input type="text" name="guess" id="guess" size="10" onkeyPress="judge();">
+            </form>
+            <p class="comment" id="comment"></p>
+        </div>
+        <div id="overall">
+            <p>
+                スコア:<span id="score">0</span>点/<span id="num_q">0</span>問中
+                <br> 
+                正答率：<span id="current_per">0</span>%
+                <br> 
+                <span id="displayTime"></span>
+            </p>
+        </div>
+        <input type="button" id="start" value="始める" onclick="play();">
+    </div>
+    <div class="mask" id="mask">
+        <div class="mask_containter">
+            <h1>終了</h1>
+            <p id="result"></p>
+            <p id="total_per"></p>
+            <p id="totalTime"></p>
+            <p id="assess"></p>
+        </div>
+        <div class="mask_review">
+            <h3 id="review_comment">ここをもう一度チェックしよう</h3>
+            <ul id="ul"></ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

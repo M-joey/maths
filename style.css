@@ -259,12 +259,20 @@ h3 {
         height: 120px;
         font-size: 120px;
     }
+    #assess {
+      font-size: 18px;
+    }
     .mask_containter {
         width: 80%;
         font-size: 20px;
         padding: 20px;
     }
-    #assess {
-      font-size: 18px;
-  }
+    .mask_review {
+        width: 90%;
+        padding: 15px;
+    }
+    .mask_review > h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 }
